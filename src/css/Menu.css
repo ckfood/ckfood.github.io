@@ -1,0 +1,306 @@
+/* src/css/Menu.css */
+
+.container {
+  padding: 16px;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.welcome-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hamburger-button {
+  padding: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute; /* Position it absolutely */
+    top: 60px; /* Adjust this based on your header height */
+    left: auto; /* Remove right alignment */
+    right: 0; /* Align it to the right of the hamburger button */
+    background-color: white; /* White background for card effect */
+    border: 1px solid #ccc; /* Border for card effect */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000; /* Ensure it appears above other content */
+    width: 150px; /* Set a width for the dropdown */
+    padding: 10px; /* Padding inside the card */
+}
+
+.dropdown-item {
+    display: block; /* Make it a block element */
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for clickable area */
+    text-align: left; /* Align text to the left */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.2s; /* Smooth background change */
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
+
+.close-button {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    font-size: 22px;
+    color: #333; /* Close button color */
+    cursor: pointer; /* Pointer cursor */
+    float: right; /* Align to the right */
+}
+
+.close-button:hover {
+    color: red; /* Change color on hover for emphasis */
+}
+
+.logout {
+    color: red; /* Optional: Different color for logout */
+}
+
+.category-container {
+  margin-bottom: 20px;
+}
+
+.category-header {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between title and arrow */
+    width: 100%; /* Full width to align properly */
+    background: none; /* Remove button background */
+    cursor: pointer; /* Pointer cursor */
+    padding: 10px; /* Add some padding */
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.category-title {
+    margin: 0; /* Remove default margin */
+}
+
+.arrow {
+    font-size: 1.2em; /* Adjust size if needed */
+    margin-left: 10px; /* Space between title and arrow */
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  position: relative;
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+}
+
+.info-container {
+  margin-left: 10px;
+  flex: 1;
+}
+
+.item-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item-price {
+  font-size: 18px;
+  color: #333;
+}
+
+.icon-button {
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sold-out {
+  background-color: #f0f0f0;
+}
+
+.sold-out-text {
+  color: #888;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.counter-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.counter-button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.counter-button-text {
+  font-size: 18px;
+}
+
+.counter-text {
+  font-size: 18px;
+  width: 30px;
+  text-align: center;
+}
+
+.checkout-container {
+  display: flex;
+  justify-content: space-between; /* Space between total info and button */
+  align-items: center; /* Center vertically */
+  padding: 10px; /* Add some padding */
+  border-top: 1px solid #ccc; /* Optional: Add a border for separation */
+}
+
+.total-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left */
+}
+
+.total-count {
+  margin: 0; /* Remove default margin */
+  font-weight: bold;
+}
+
+.total-price {
+  margin: 0; /* Remove default margin */
+  margin-top: 5px; /* Space between total items and total price */
+  color: #287618;
+  font-weight: bold;
+}
+
+.checkout-button {
+  background-color: #287618;
+  padding: 10px 20px; /* Adjust padding for button */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px; /* Space between total and button */
+  flex-shrink: 0;
+}
+
+.checkout-button:hover {
+  background-color: #0056b3; /* Darker button on hover */
+}
+.checkout-button:hover {
+  background-color: #1e5b13; /* Darker color on hover */
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .checkout-container {
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: stretch; /* Stretch items to full width */
+  }
+
+  .checkout-button {
+    /* margin-top: 10px; Add space above the button on mobile */
+    width: 100%; /* Full width for mobile */
+  }
+}
+
+/* Additional Reset for Common Elements */
+* {
+  margin: 0; /* Reset margin for all elements */
+  padding: 0; /* Reset padding for all elements */
+}
+
+/* Additional Reset for Common Elements */
+* {
+  margin: 0; /* Reset margin for all elements */
+  padding: 0; /* Reset padding for all elements */
+}
+
+/* Additional Reset for Common Elements */
+p {
+  margin: 0; /* Reset margin for all p elements */
+  padding: 0; /* Reset padding for all p elements */
+}
+
+.checkout-button:hover {
+  background-color: #1e5b13;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .welcome-text {
+    font-size: 20px; /* Adjust font size for mobile */
+  }
+
+  .category-title {
+    font-size: 20px; /* Adjust category title size */
+  }
+
+  .card-container {
+    flex-direction: column; /* Stack card items vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .item-name {
+    font-size: 18px; /* Adjust item name size */
+  }
+
+  .item-price {
+    font-size: 16px; /* Adjust item price size */
+  }
+
+  .checkout-button {
+    width: auto; /* Allow the button to size naturally */
+  }
+}
